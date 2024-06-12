@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Task 74</title>
+	<style>
+		* {
+				font-family: arial;
+			}
+			tbody > tr:first-of-type > td {
+				background-color: black;
+				border-radius: 15px 15px 0px 0px;
+				color: white;
+				font-weight: bold;
+				padding: 10px;
+			}
+			tbody > tr:nth-of-type(even) {
+				background-color: #BBB;
+			}
+			tbody > tr:nth-of-type(odd) {
+				background-color: #EEE;
+			}
+			tbody > tr:nth-of-type(2) > td:first-child {
+				background-color: red;
+				color: white;
+				border-radius: 15px 0px 0px 15px;
+				font-size: 1.5em;
+				padding: 1.5em;
+			}
+			.numbers {
+				background-color: black;
+				color: white;
+				
+			}
+			caption {
+				caption-side: bottom;
+				padding: 12px;
+				font-style: italic;
+			}
+			tbody > tr:first-of-type > td:first-of-type {
+				background-color: white;
+			} 
+			td {
+				text-align: center;
+				padding: 15px 10px;
+			}
+	</style>
+</head>
+<body>
+
+	<table>
+		<caption>Table 1: Top scorers in the Champions League (as of June 2015)</caption>
+		<tbody>
+		   <tr>
+			<td></td>
+			<td>Player</td>
+			<td>Country</td>
+			<td>Goals</td>
+			<td>Matches</td>
+			<td>Goals per match</td>
+			<td>Clubs</td>
+		   </tr> 
+			<tr>
+				<td rowspan="2">1</td>
+				<td>Lionel Messi</td>
+				<td>Argentinia</td>
+				<td>	77</td>
+				<td>99</td>
+				<td>0,78</td>
+				<td>Barcelona</td>
+			</tr>
+
+			<tr>
+				<td>Cristiano Ronaldo</td>
+				<td>Portugal</td>
+				<td>77</td>
+				<td>115</td>
+				<td>0,67<</td>
+				<td>Manchester United, Real Madrid</td>
+			</tr>
+			<tr>
+				<td class="numbers">3</td>
+				<td>Raúl</td>
+				<td>Spain</td>
+				<td>71</td>
+				<td>142</td>
+				<td>0,5></td>
+				<td>Real Madrid, Schalke 04</td>
+				</tr>
+				<tr>
+				<td class="numbers">4</td>
+				<td>Ruud van Nistelrooy</td>
+				<td>Netherlands</td>
+				<td>56</td>
+				<td>73</td>
+				<td>0,77</td>
+				<td>PSV, Manchester United, Real Madrid</td>
+				</tr>
+				<tr>
+				<td class="numbers">5</td>
+				<td>Thierry Henry</td>
+				<td>France</td>
+				<td>50</td>
+				<td>112</td>
+				<td>0,45<</td>
+				<td>Monaco, Arsenal, Barcelona</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS Box Model - Intro</title>
+    <style>
+
+      div{
+          background-color: lightgray;
+      }
+
+      div > p:first-of-type{
+          text-align:justify;
+      }
+
+      div > p:nth-of-type(2){
+          text-align:justify;
+
+      }
+
+
+      span{
+        color:red;
+
+      }
+
+      img{
+
+
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>The CSS Box Model</h1>
+
+    <h2><code>block</code> elements</h2>
+
+    <h3>Test area (&copy; W3Schools)</h3>
+
+    <div style="width: 25%; border: 25px solid green; padding: 30px; margin: 100px;">
+        <p style="width: 50%;">
+          This text is the actual content of the box. We have added a 30px padding,
+          100px margin and a 25px green border.
+        </p>
+        <p>
+          Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum.
+          Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum.
+          Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum.
+          Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum.
+        </p>
+      </div>
+
+      <div style="width: 25%; border: 25px solid green; padding: 30px; margin: 100px;">
+        <p style="width: 50%;">
+          This text is the actual content of the box. We have added a 30px padding,
+          100px margin and a 25px green border.
+        </p>
+        <p>
+          Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum.
+          Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum.
+          Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum.
+          Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum.
+        </p>
+      </div>
+
+    <h3>Exercise</h3>
+    <ol>
+      <li>
+        Give the <code>div</code> in the test area a width of 25%.
+        You need the <code>width</code> property for this.
+      </li>
+      <li>
+        Open this page in the browser. What does the 25% refer to? Enlarge and reduce your browser window.
+      </li>
+    </ol>
+    <p>
+		It refers to 25% of the page
+    </p>
+    <ol start="3">
+      <li>
+        Give the first pargraph inside the <code>div</code> in the test area a width of 50%.
+
+      </li>
+      <li>
+        Open this page in the browser. What does the 50% refer to this time? Enlarge and reduce your browser window.
+      </li>
+    </ol>
+    <p>
+      It will stay 50% the size of your page
+    </p>
+
+    <ol start="5">
+      <li>
+        Add the property <code>border</code> with the value <code>25px solid green</code> to the <code>div</code> in the test area.
+      </li>
+      <li>
+        Open this page in your browser. What do you find?
+      </li>
+    </ol>
+    <p>
+      A border around the box
+    </p>
+
+    <ol start="7">
+      <li>
+        Using the following link, explain what each piece of information: 
+          <code>25px</code>, <code>solid</code> and <code>green</code> is for:
+          <a href="https://www.w3schools.com/cssref/pr_border.asp" target="_blank">
+            https://www.w3schools.com/cssref/pr_border.asp
+          </a>
+      </li>
+    </ol>
+    <ul>
+      <li>
+        <code>25px</code>: the size of the border
+      </li>
+      <li>
+        <code>solid</code>: the style it could be dotted, dashed and so on
+      </li>
+      <li>
+        <code>green</code>: the color
+      </li>
+    </ul>
+
+    <ol start="8">
+      <li>
+        Add the property <code>padding</code> with the value <code>30px</code> to the <code>div</code> in the test area.
+      </li>
+      <li>
+        Open the page in the browser. What is the property <code>padding</code>?
+      </li>
+    </ol>
+    <p>
+      Your answer:
+    </p>
+
+    <ol start="10">
+      <li>
+        Add the property <code>margin</code> with the value <code>100px</code> to the <code>div</code> in the test area.
+      </li>
+      <li>
+        Open the page in the browser. What is the property <code>margin</code> for?
+      </li>
+    </ol>
+    <p>
+      Your answer:
+    </p>
+
+    <ol start="12">
+      <li>
+        Copy the entire <code>div</code> in the test area so that there are two identical <code>div</code> elements.
+      </li>
+
+      <li>
+        Open the page in the browser. Are the two <code>div</code> elements next to each other or on top of each other?
+      </li>
+      <li>
+        Find out about block elements and explain their properties on the following page:
+        <a href="https://www.w3schools.com/html/html_blocks.asp" target="_blank">https://www.w3schools.com/html/html_blocks.asp</a>
+      </li>
+    </ol>
+    <p>
+      Your answer:
+    </p>
+
+    <h2><code>inline</code> elements</h2>
+
+    <h3>Test area</h3>
+    <p>
+      This is a paragraph with a <span style="margin: 30px;">red</span> word.
+      Ut enim ad minim veniam, quis nostrud
+      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+      mollit anim id est laborum.
+      Ut enim ad minim veniam, quis nostrud
+      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+      mollit anim id est laborum.
+      Ut enim ad minim veniam, quis nostrud
+      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+      mollit anim id est laborum.
+      Ut enim ad minim veniam, quis nostrud
+      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+      mollit anim id est laborum.
+    </p>
+
+
+    <h3>Exercise</h3>
+    <ol>
+      <li>
+        give the <code>span</code> in the test area a width of <code>500px</code>.
+      </li>
+      <li>
+        Open this page in the browser. Has anything changed?
+      </li>
+      <li>
+        Find out about inline elements and explain their properties on the following page:
+        <a href="https://www.w3schools.com/html/html_blocks.asp" target="_blank">https://www.w3schools.com/html/html_blocks.asp</a>
+      </li>
+    </ol>
+    <p>
+      Your answer:
+    </p>
+
+    <ol start="4">
+      <li>
+        Give the <code>span</code> in the test area an inner / outer margin of <code>30px</code>.
+      </li>
+      <li>
+        Open this page in the browser. Has anything changed? Is there anything special to note?
+      </li>
+
+    </ol>
+    <p>
+        Your answer:
+    </p>
+    <h2><code>inline block</code> elements</h2>
+
+    <h3>Test area</h3>
+
+    <img src="img/puntaCana.jpg" alt="Punta Cana" style="width: 10%; border: 25px solid blue;">
+    <img src="img/puntaCana.jpg" alt="Punta Cana" style="width: 10%; border: 25px solid blue;">
+    
+
+    <h3>Exercise</h3>
+    <ol>
+      <li>
+        Try to change the width, the inner and outer border and the frame of the image. Open this page in the browser after each change.
+      </li>
+      <li>
+        Are the changes displayed?
+      </li>
+      <li>
+        Copy the image so that there are two images.
+      </li>
+      <li>
+        Are the two images side by side or on top of each other? Maximize the size of your browser window.
+      </li>
+      <li>
+        So what properties do <code>inline-block</code> elements have?
+      </li>
+    </ol>
+
+    <p>
+      Your answer:
+    </p>
+
+  </body>
+</html>

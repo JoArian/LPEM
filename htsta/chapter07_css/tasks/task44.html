@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Task 44</title>
+    <style>
+      li {
+        margin: 8px 0;
+      }
+      img {
+        width: 80vw;
+        border: solid 1px black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Task 44</h1>
+
+    <h2>Other CSS selectors</h2>
+    <p>
+      So far we have only used the <em>element selector</em>. With the <em>group selector</em> we could additionally group several elements together.
+    <p>
+    <p>
+      However, this way certain styles can only be applied to <em>all elements</em> of a type (e.g. to all paragraphs).
+    </p>
+    <h3>ID and class selector</h3>
+    <p>
+      The <em>ID</em> and <em>class</em> attribute can be used to address the elements of the HTML document more specifically:
+    </p>
+    
+    <ul>
+      <li>
+        <a href="https://www.w3schools.com/tags/att_global_id.asp" target="_blank">ID attribute</a>: 
+        defines a unique identifier for an element: <br>
+        <code>&lt;p id="introduction"&gt;Unique paragraph with ID "introduction".&lt;/p&gt;</code>
+      </li>
+      <li>
+        <a href="https://www.w3schools.com/tags/att_global_class.asp" target="_blank">Class attribute</a>: 
+        defines one or more class names for an element: <br>
+        <code>&lt;p class="reference"&gt;Paragraph which belongs to the class "reference".&lt;/p&gt;</code>
+      </li>
+    </ul>
+    <p>
+      In CSS, these elements can now be defined with the
+      <a href="https://www.w3schools.com/css/css_syntax.asp" target="_blank">id und class selectors</a>
+      to apply CSS styles.
+    </p>
+    
+    <p>
+      To select the element with the ID <code>id-name</code>:
+    </p>
+    <pre>
+    <code>
+    #id-name {
+      CSS properties;
+    }
+    </code>
+    </pre>
+    
+    <p>
+      To select all elements of the class <code>class-name</code>:
+    </p>
+    <pre>
+    <code>
+    .class-name {
+      CSS properties;
+    }
+    </code>
+    </pre>
+    
+    
+    <h2>Task</h2>
+    
+    <p>
+      Open the page 
+      <a href="../solutions/task44.html"><code>../solutions/task44.html</code></a>
+      and adjust the style according to the following criteria.
+    </p>
+    <p>
+      <strong>Use the classes and ids of each element to apply the style.</strong>
+    </p>
+    <ol>
+      <li>
+        The text of the <strong>paragraphs</strong> with the class<em>reference</em> should be aligned to the right margin.
+      </li>
+      <li>
+        The heading with the text <strong>Definition</strong> should be displayed in <em>italics</em>.
+      </li>
+      <li>
+        The heading with the text <strong>Examples</strong> should be <em>underlined</em>.
+      </li>
+      <li>
+        The text of the list element <strong>Scottish</strong> should use the following font: <em>Palatino Linotype</em>
+      </li>
+      <li>
+        The text of the list element <strong>Russian</strong> should use the following font: <em>Trebuchet MS</em>
+      </li>
+    </ol>
+    <figure>
+      <img style="width: 80%;" src="images/task44s.png" alt="Solution of Task 44">
+      <figcaption>Solution of Task 44</figcaption>
+    </figure>
+  </body>
+</html>

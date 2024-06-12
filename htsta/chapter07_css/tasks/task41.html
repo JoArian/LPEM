@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Task 41</title>
+  </head>
+  <body>
+    <h1>Task 41</h1>
+    
+    <p>
+      In the previous task we saw how to add CSS style <em>inline</em> in the HTML code to each element. However, this method has some disadvantages:
+    </p>
+    <ul>
+      <li>
+        To add the same CSS style to <em>multiple elements</em> of the same type you need to <em>duplicate</em> the code.
+      </li>
+      <li>
+        There is <em>no strict separation</em> between HTML and CSS code.
+      </li>
+    </ul>
+    
+    <h2>Internal/Embedded Style Sheet</h2>
+    <p>
+      Instead of specifying the CSS style inline for each element, you can specify the CSS rules all in the
+      <code>&lt;head&gt;</code> of the HTML file. The internal style is specified within the
+      <code><strong>style</strong></code> element in the <code>&lt;head&gt;</code>.
+    </p>
+    
+    <pre>
+    <code>
+    &lt;head&gt;
+      &lt;style&gt;
+        &lt;!-- Internal Style Sheet --&gt;
+      &lt;/style&gt;
+    &lt;/head&gt;
+    </code>
+    </pre>
+    
+    <p>
+      This method allows you to apply CSS rules to the HTML elements of the <strong>entire page</strong>.
+      To do this, you use so-called <em>selectors </em>.
+    </p>
+    
+    <h3>CSS selectors</h4>
+    
+    <p>
+      To change the style of an HTML <em>element</em> you have to select the element and then define the 
+      <em>CSS properties</em>.
+    </p>
+    
+    <pre>
+    <code>
+    &lt;head&gt;
+      &lt;style&gt;
+        Element {
+          CSS properties;
+        }
+      &lt;/style&gt;
+    &lt;/head&gt;
+    </code>
+    </pre>
+    
+    <p>
+      You can find an example 
+      <a href="https://www.w3schools.com/cssref/sel_element.asp" target="_blank">here</a>.
+    </p>
+      
+    <h2>Task</h2>
+    <p>
+      Open the page 
+      <a href="../solutions/task41.html"><code>../solutions/task41.html</code></a>
+      and format all paragraphs as in 
+      <code>../solutions/task40.html</code>.
+      This time use the method of the <em>Internal Style Sheet</em>.
+    </p>
+  </body>
+</html>

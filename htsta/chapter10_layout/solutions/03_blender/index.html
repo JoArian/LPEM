@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Blender</title>
+    <style>
+
+* { 
+	font-family: Arial;
+}
+
+nav {
+  display: flex;
+  justify-content:space-around;
+  flex-direction: row;
+  align-items:center;
+  margin: 0 auto;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  justify-content: space-around;
+}
+
+nav li {
+  display: inline-block;
+  text-align: center;
+  padding: 4px 2em;
+  text-decoration: none;
+  margin: auto;
+  font-size: 1.5em;
+}
+
+nav img {
+	float: middle; 
+	border-radius: 50%;
+  overflow: hidden;
+  margin-top: -16px;
+}
+
+main { 
+	display:flex;
+  justify-content:space-around;
+  padding: 20px;
+  background-color:lightgray;
+}
+
+.column {
+  flex: 1;
+  background-color: white;
+  margin: 0 30px;
+  padding: 0 20px 20px 20px
+}
+
+h3, h1 {
+  color: dodgerblue;
+}
+
+.button {
+  background-color: #dfdfdf;
+  padding: 5px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border: solid black 1px; 
+}
+
+article {
+  border-bottom: 1px solid black;
+}
+
+article:last-of-type {
+  border-bottom: none;
+}
+
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <nav>
+          <div>
+            <ul>
+              <li>Features</li>
+              <li>Download</li>
+              <li>About</li>
+            </ul>
+          </div>
+
+          <img src="img/blender_logo.png" alt="Blender Logo">
+
+          <div>
+            <ul>
+              <li>Support</li>
+              <li>Get Involved</li>
+              <li>Store</li>
+            </ul>
+          </div>
+        </nav>
+        <img id="banner" src="img/banner.png" alt="banner">
+      </header>
+      <main>
+        <div class="column">
+          <article>
+            <h1>Blender 2.76b</h1>
+
+            <p>The binaries for the updated Blender 2.76b release are now ready for download.</p>
+
+            <p>Cycles volume density render, Pixar’s OpenSubdiv, Node inserting, Video editing tools, 100s of fixes, and a lot more is new in 2.76!</p>
+          </article>
+
+          <article>
+            <h1>Development Fund</h1>
+
+            <p>Consider donating each month to enable full-time developers to work on Blender.</p>
+
+          </article>
+
+
+          <div class="button">
+            Blender Workflow Project
+          </div>
+        </div>
+
+        <div class="column">
+          <article>
+            <h1>Blender 2.77 test</h1>
+
+            <p>
+              The 2nd test build for the new release is available now.
+              (Release log is WIP)
+            </p>
+          </article>
+
+          <article>
+            <h1>The Art of Open Source</h1>
+
+            <p>
+              A great introduction to Blender for a wider audience.
+              Written for Linux Format magazine by Jim Thacker.
+            </p>
+          </article>
+          <article>
+            <h1>Get Involved</h1>
+            <p>
+              Blender is being made by 100s of people from around the world; by studios and individual artists,
+              professionals and hobbyists, scientists, students, VFX experts, animators, game artists, modders, and the list goes on.
+            </p>
+          </article>
+          <div class="button">
+            Get Involved
+          </div>
+        </div>
+
+        <div class="column">
+          <article>
+            <h3>Tutorial: Shading and Grooming Oti</h3>
+            <p>BlenderNation - February 24th</p>
+          </article>
+          <article>
+            <h3>Blender Institute Podcast #013 – Puppies</h3>
+            </p>Blender Cloud - February 18th</p>
+          </article>
+          <article>
+            <h3>Cosmos, Glass Half and Llamigos selected for ...</h3>
+            <p>Blender Cloud - February 17th</p>
+          </article>
+          <article>
+            <h3>The Art of Open Source</h3>
+            <p>Blender.org News - January 25th</p>
+          </article>
+          <article>
+            <h3>Blender branches to watch in 2016</h3>
+            <p>Blender.org News - January 3rd</p>
+          </article>
+          <div class="button">
+            More News
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

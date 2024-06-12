@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Task 73</title>
+	<meta charset="utf-8">
+	<style>
+		table {
+			border: 0px;
+			border-collapse: collapse;
+		}
+
+		table, td, tr {
+			padding: 5px;
+		}
+
+		tbody > tr > td:first-of-type {
+			font-weight: bold;
+		}
+
+		tbody > tr:nth-child(odd) > td:first-of-type {
+			background-color: lightgray;
+		}
+
+		tbody > tr:nth-child(even) > td:first-of-type {
+			background-color: rgb(243, 243, 243);
+		}
+
+		tbody > tr:last-child > td:first-of-type {
+			border-radius: 0 0 0 10px;
+		}
+
+		tbody > tr:nth-child(even) > td:nth-child(2), tbody > tr:nth-child(even) > td:nth-child(3) {
+			background-color: rgb(201, 227, 245);
+			text-align: center;
+		}
+
+		tbody > tr:nth-child(odd) > td:nth-child(2), tbody > tr:nth-child(odd) > td:nth-child(3) {
+			background-color: rgb(184, 218, 245);
+			text-align: center;
+		}
+
+		th {
+			height: 2em;
+		}
+		
+
+		#features {
+			background-color: gray;
+			text-align:  left;
+			border-radius: 10px 0 0;
+		}
+
+		thead {
+			color: white;
+		}
+
+		.device, .review {
+			background-color: rgb(62, 93, 177);
+			color: white;
+			text-align: center;
+		}
+
+		.review {
+			border-radius: 0 0 10px 10px;
+			padding: 5px;
+		}
+
+		.device {
+			border-radius: 10px 10px 0px 0px;
+			padding: 15px 0px;
+		}
+
+		td {
+			padding: 5px;
+		}
+	</style>
+</head>
+<body>
+	<table>
+
+		<thead>
+			<tr>
+				<th></th>
+				<th rowspan="2" class="device">Samsung Galaxy S6</th>
+				<th rowspan="2" class="device">Apple iPhone 6</th>
+			</tr>
+			<tr>
+				<th id="features">Features</th>
+
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>OS</td>
+				<td>Android 5.0</td>
+				<td>iOS 8</td>
+			</tr>
+			<tr>
+				<td>Dimensions</td>
+				<td>5.65 by 2.78 by 0.27 inches</td>
+				<td>5.44 by 2.64 by 0.27 inches</td>
+			</tr>
+			<tr>
+				<td>Weight</td>
+				<td>4.87 oz</td>
+				<td>4.55 oz</td>
+			</tr>
+			<tr>
+				<td>Screen Type</td>
+				<td>Super AMOLED HD</td>
+				<td>IPS LCD</td>
+			</tr>
+			<tr>
+				<td>Screen Resolution</td>
+				<td>2560 x 1600 pixels</td>
+				<td>1335 x 750 pixels</td>
+			</tr>
+			<tr>
+				<td>Screen Pixels Per Inch</td>
+				<td>577 ppi</td>
+				<td>326 ppi</td>
+			</tr>
+			<tr>
+				<td>Camera Resolution</td>
+				<td>16MP Rear; 5MP Front-Facing</td>
+				<td>8MP Rear; 1.2MP Front-Facing</td>
+			</tr>
+			<tr>
+				<td>Video Camera Resolution</td>
+				<td>4K/1080P</td>
+				<td>1080P</td>
+			</tr>
+			<tr>
+				<td>Bluetooth Version</td>
+				<td>4.1 LE</td>
+				<td>4.0 LE</td>
+			</tr>
+			<tr>
+				<td>Colors available</td>
+				<td>Black, Blue, Gold, White</td>
+				<td>Gold, Silver, Space Gray</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td></td>
+				<td class="review">Read a review</td>
+				<td class="review">Read a review</td>
+			</tr>
+		</tfoot>
+	</table>
+</body>
+</html>

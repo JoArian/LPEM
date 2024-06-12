@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Page Title</title>
+	</head>
+	<body>
+
+		<h1>Parts and meaning of a URL</h1>
+		<ol>
+		<li>The first part of a URL is the Scheme/Protocol, it tells the web which protocol to use. 
+		HTTPS (Hypertext Tranfer Protocol Secure) is the most common</li>
+		<img src="Scheme.png"
+		<li>The second part is a subdomain, which is basically telling the Web which page to go to like Home, Settings and so on.</li>
+		</ol>
+
+	</body>
+</html>

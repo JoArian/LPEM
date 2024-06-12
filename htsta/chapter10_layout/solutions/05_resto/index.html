@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>TIF Resto</title>
+    <style>
+      body {
+        background-image: url("img/background.jpg"); 
+       
+        font-family: Arial;
+      }
+
+      header {
+        background-color: rgba(128, 128, 128, 0.5);
+        display: flex;
+	      flex-direction: column;
+        display:flex;
+	      flex-direction: row;
+	      align-items:center;
+      }
+
+      header > div {
+        display: flex;
+	      flex-direction: column;
+        color: white; 
+        opacity: 100%;
+        padding: 20px;
+      }
+
+      nav {
+        text-align: right;
+        width: 80%;
+        color: white;
+      }
+
+      nav > ul {
+      list-style-type: none;
+      font-size: 1.5em;
+      }
+
+      nav > ul > li {
+        display: inline-block;
+        padding: 1em;
+      }
+
+      main {
+      display: flex;
+	   flex-direction: row;
+      padding: 0 2em;
+      justify-content: center;
+      margin: 16em 50px;
+    }
+
+    main > figure {
+      background-color: rgba(128, 128, 128, 0.5);
+      height: 20%
+    }
+
+    main > figure > figcaption {
+      color:white;
+      text-align: center;
+    }
+
+    footer {
+      background-color: rgba(128, 128, 128, 0.5);
+      color:white;
+      text-align: right;
+      margin-bottom: auto;
+      padding: 20px;
+      margin: 0px;
+    }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <div>
+          <h1>Restaurant TIF</h1>
+        </div>
+        <nav>
+          <ul>
+            <li>Menu</li>
+            <li>Locations</li>
+            <li>Catering</li>
+            <li>Shop</li>
+            <li>About</li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+
+          <figure>
+            <img src="img/chef.jpg" alt="The Chef">
+            <figcaption>The Chef</figcaption>
+          </figure>
+
+          <figure>
+            <img src="img/team.jpg" alt="The Team">
+            <figcaption>The Team</figcaption>
+          </figure>
+
+          <figure>
+            <img src="img/events.jpg" alt="Events">
+            <figcaption>Events</figcaption>
+          </figure>
+
+      </main>
+      <footer>
+          <p>&copy; T0IF | design by Various Sources</p>
+      </footer>
+    </div>
+  </body>
+</html>

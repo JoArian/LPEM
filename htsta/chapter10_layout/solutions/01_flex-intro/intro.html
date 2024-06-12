@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Introduction to Flex</title>
+    <style>
+      .flex-container {
+        background-color: DodgerBlue;
+		display: end;
+		flex-direction: row;
+		min-height: 100vh
+		justify-content: center; 
+      }
+
+      .flex-container > div { /* All divs 1 - 8 */
+        background-color: #f1f1f1;
+        
+        border:1px solid black;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+		width: 100px;
+      }
+	
+	
+  </style>
+</head>
+<body>
+  <h1>Flexible Boxes</h1>
+  <h2>Test area (&copy; W3Schools)</h2>
+  <div class="flex-container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+  </div>
+
+  <h2>Exercise</h2>
+
+  <h3>Understand <code>display: flex;</code> and <code>flex-direction</code></h3>
+  <ol>
+    <li>Add the <code>display</code> property with the value <code>flex</code> to the outer <code>div</code> with the <em>class</em> <code>flex-container</code>.</li>
+    <li>Add the <code>flex-direction</code> property with the value <code>row</code> to the same <code>div</code>.</li>
+    <li>Open this page in the browser? What do you notice?</li>
+  </ol>
+
+
+  <p>
+    Your answer: Theyre all on the same row
+  </p>
+
+  <ol start="4">
+    <li>Replace the value of the <code>flex-direction</code> property with the new <code>column</code> value.</li>
+    <li>Open this page in the browser? What do you notice?</li>
+  </ol>
+
+  <p>
+    Your answer: Theyre all now in a column
+  </p>
+
+  <ol start="6">
+    <li>Remove the width and height of the inner <code>div</code> elements.</li>
+    <li>Replace the value of the <code>flex-direction</code> property with the new <code>row</code> value.</li>
+    <li>Open this page in the browser? What do you notice?</li>
+  </ol>
+
+  <p>
+    Your answer: All the numbers are together on the same row with no horizontal padding
+  </p>
+
+  <ol start="10">
+    <li>Remove the width and height of the inner <code>div</code> elements.</li>
+    <li>Füge dem äußeren <code>div</code> mit der <em>Klasse</em> <code>flex-container</code> die Eigenschaft <code>min-height</code> mit dem Wert <code>100vh</code> hinzu.
+    <li>Add the <code>min-height</code> property with the value <code>100vh</code> to the outer <code>div</code> with the <em>class</em> flex-container.</li>
+    <li>Replace the value of the <code>flex-direction</code> property with the new <code>row</code> value.</li>
+    <li>Open this page in the browser? What do you notice?</li>
+  </ol>
+
+  <p>
+    Your answer: The height has changed to 100% of the broswer window size
+  </p>
+
+  <ol start="14">
+
+    <li>Replace the value of the <code>flex-direction</code> property with the <code>column</code> value.</li>
+    <li>Open this page in the browser? What do you notice?</li>
+  </ol>
+
+  <p>
+    Your answer: Now the width is 100% of the broswers page size instead
+  </p>
+
+  <h3><code>justify-content</code> und <code>align-items</code> verstehen</h3>
+  <ol>
+    <li>
+      Add a width of <code>100px</code> to the inner <code>div</code> elements again.
+    </li>
+    <li>
+      Change the value of the property <code>flex-direction</code> of the <code>div</code>
+      with the class <code>flex-container</code> to <code>row</code>.
+    </li>
+    <li>
+      Add the property <code>justify-content</code>
+      with the value <code>center</code> to the same <code>div</code>.
+    </li>
+    <li>Open this page in the browser? What do you notice?</li>
+    <li>
+      Then replace the value <code>center</code> with the values <code>flex-end</code>, <code>space-around</code> and <code>space-between</code>.
+      Give an explanation for each of the values.
+    </li>
+  </ol>
+
+  <ul>
+    <li>
+      <code>flex-start</code> (Standardwert):
+    </li>
+    <li>
+      <code>center</code>:
+    </li>
+    <li>
+      <code>flex-end</code>:
+    </li>
+    <li>
+      <code>space-around</code>:
+    </li>
+    <li>
+      <code>space-between</code>:
+    </li>
+  </ul>
+
+  <ol start="6">
+
+    <li>
+      Add te property <code>align-items</code> with the value <code>center</code> to the <code>div</code> with the class <code>flex-container</code>.
+    </li>
+    <li>Open this page in the browser? What do you notice?</li>
+    <li>
+      Then replace the value <code>center</code> with the value <code>flex-end</code>,
+      and reopen the page in the browser. Gib eine Erklärung zu jedem der folgenden Werte.
+    </li>
+  </ol>
+
+  <ul>
+    <li>
+      <code>flex-start</code> (default value):
+    </li>
+    <li>
+      <code>center</code>:
+    </li>
+    <li>
+      <code>flex-end</code>:
+    </li>
+  </ul>
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Agalloch</title>
+    <style>
+	body {
+		background-image: url("img/background.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	
+	nav {
+	  background-color: rgba(47, 16, 15, 0.75);
+	  font-variant: small-caps;
+	  color:white;	  
+	  margin: 0 auto;
+	  width: 60%
+	 }
+	
+	#wrapper > div {
+		display: flex;
+		flex-direction: column;
+	}
+	nav > ul {
+	  list-style-type: none;
+	}
+	
+	nav > ul > li {
+	padding: 5px;
+	}
+
+	main {
+	background-color: rgba(47, 16, 15, 0.75);
+	margin-top: 10em;
+	color: white;
+	}
+
+	footer {
+	background-color: rgba(47, 16, 15, 0.75)
+	color:white;
+	}
+	
+	#wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	min-height: 100vh;
+	}
+	
+	.date {
+	font-size: 15px;
+	font-style: italic;
+	}
+	
+	nav {
+	flex-grow: 1;
+	  margin-top: 10em;
+	  font-size: 1.5em;
+	}
+
+    </style>
+  </head>
+  <body>
+      <div id="wrapper">
+          <div>
+            <header>
+                <img src="img/logo.png" alt="Agalloch Logo">
+            </header>
+            <nav>
+              <ul>
+                <li>Music</li>
+                <li>Band</li>
+                <li>Experience</li>
+                <li>Show</li>
+                <li>Contact</li>
+              </ul>
+            </nav>
+          </div>
+          <div>
+            <main>
+                <section>
+                  <h1>Serpens In Cvlmination West Coast tour</h1>
+                  <p class="date">2015-04-18</p>
+                  <img src="img/west.jpg" alt="Western Tour Dates">
+                </section>
+                <section>
+                  <h1>Serpens In Cvlmination European tour</h1>
+                  <p class="date">2015-03-12</p>
+                  <img src="img/european.jpg" alt="European Tour Dates">
+                </section>
+                <section>
+                  <h1>New shop</h1>
+                  <p class="date">2013-03-12</p>
+                  <p>
+                    We have redesigned and linked the Dämmerung Arts shop to this page.
+                    It is the official merchandise source for Agalloch.
+                  </p>
+                  <p>
+                    We have also started carrying select Eisenwald releases and will
+                    be adding more titles to our distro list in the coming weeks.
+                  </p>
+                </section>
+            </main>
+            <footer>
+                <p>&copy agalloch</p>
+            </footer>
+          </div>
+      </div>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Task 48</title>
+    <style>
+      ol li, ul li, dt {
+        margin: 8px 0;
+      }
+      dt {
+        font-weight: bold;
+      }
+      img {
+        width: 80vw;
+        border: solid 1px black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Task 48</h1>
+    
+    <h2>Internal styles</h2>
+    
+    <p>
+      So far we have learned two ways to combine CSS rules and HTML elements <em>within</em> 
+      an HTML document:
+    <p>
+
+    <dl>
+      <dt>Inline Style</dt>
+        <dd>
+          The CSS rules are added directly to the HTML elements with the attribute <strong><code>style</code></strong>.
+        </dd>
+      <dt>Internal Style Sheet</dt>
+        <dd>
+          The CSS rules are all stored in the <code>&lt;head&gt;</code> in one <strong><code>script</code></strong>
+          element of the HTML file.
+        </dd>
+    </dl>
+    
+    <h2>External Style Sheet</h2>
+    <p>
+      However, there is a third possibility, which is especially useful if you want to apply the same CSS style to several pages.
+      You combine all CSS rules in an <em>external</em> file and then include this file in the <strong>HTML pages</strong>:
+    </p>
+    <dl>
+      <dt>External Style Sheet</dt>
+        <dd>
+          The CSS rules are all stored in a separate file (extension .css), which is referenced in the HTML file with the <strong><code>link</code></strong> element in the <code>&lt;head&gt;</code>.
+        </dd>
+    </dl>
+    
+    <p>
+      Use the following website to inform yourself about the <strong>External Style Sheet</strong>:
+      <a href="https://www.w3schools.com/css/css_howto.asp" target="_blank">https://www.w3schools.com/css/css_howto.asp</a>
+    </p>
+    
+    <h1>Exercise</h1>
+    
+    <ol>
+      <li>
+        Open the folder <code>../solutions/task48</code>.
+        <br> 
+        This contains four HTML pages and a folder <em>styles</em>.
+      </li>
+      <li>
+        In the <em>styles</em> folder, create an external style sheet with the name <em>style.css</em>
+      </li>
+      <li>
+        Now create the following CSS style in the file <em>style.css</em>:
+        <ul>
+          <li>First level headings are centered.</li>
+          <li>Second level headings are displayed in italics.</li>
+          <li>The list items have <em>no</em> bullets.</li>
+          <li>The hyperlinks are <em>not</em> underlined with <strong>exeption</strong> of the just active.</li>
+        </ul>
+        <strong>Advanced:</strong>
+        <ul>
+          <li>If you move the mouse over a hyperlink, this text is both underlined and overlined.</li>
+        </ul>
+      </li>
+      <li>
+        Make sure that the external style sheet is applied to <strong>all pages</strong>.
+      </li>
+    </ol>
+    
+    <figure>
+        <img src="images/task48s.png" alt="Solution of Task 48">
+        <figcaption>The pae index.html with CSS-Style</figcaption>
+      </figure>
+  </body>
+</html>
